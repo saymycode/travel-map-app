@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Map App</title>
+
+    <!-- Google Maps API -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDir3jIL6cxniTn209fRPybgZ-R-S79Hdk&libraries=visualization">
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script type="module" src="/src/main.js"></script>
+
+    <!-- ✅ Google callback boş kalabilir -->
+    <script>
+      window.initMap = function () {
+        // Vue içindeki initMap zaten çalışıyor, bu fonksiyon boş kalabilir
+      };
+    </script>
+  </body>
+</html>
